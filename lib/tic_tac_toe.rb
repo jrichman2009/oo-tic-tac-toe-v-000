@@ -71,6 +71,7 @@ class TicTacToe
   end
 
   def won?
+    @winning_token = ""
     WIN_COMBINATIONS.each do |three_in_a_row|
       if @board[three_in_a_row[0]] == "X" && @board[three_in_a_row[1]] == "X" && @board[three_in_a_row[2]] == "X"
         return three_in_a_row
