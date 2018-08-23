@@ -76,7 +76,7 @@ class TicTacToe
         return three_in_a_row
 
         break
-      elsif @board[three_in_a_row[0][0]] == "O" && @board[three_in_a_row[0][1]] == "O" && @board[three_in_a_row[0][2]] == "O"
+      elsif @board[three_in_a_row[0]] == "O" && @board[three_in_a_row[1]] == "O" && @board[three_in_a_row[2]] == "O"
         return three_in_a_row.to_a
         break
       end
