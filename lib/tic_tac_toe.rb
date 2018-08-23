@@ -135,8 +135,10 @@ class TicTacToe
       turn
     end
     if winner != nil
+      puts "Congratulations #{winning_token}"
       return @winning_token
     else
+      puts "Cat's Game!"
       return nil
     end
   end
