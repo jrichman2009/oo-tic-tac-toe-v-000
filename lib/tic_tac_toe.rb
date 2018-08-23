@@ -124,8 +124,16 @@ class TicTacToe
     if won? != false
 
       return @winning_token
+    else
+      return nil
     end
 
   end
+
+  def play
+    while over? != true
+      turn
+    end
+    if
 
 end
