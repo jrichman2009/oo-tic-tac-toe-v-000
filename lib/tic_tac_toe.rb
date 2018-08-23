@@ -74,10 +74,12 @@ class TicTacToe
     @winning_token = ""
     WIN_COMBINATIONS.each do |three_in_a_row|
       if @board[three_in_a_row[0]] == "X" && @board[three_in_a_row[1]] == "X" && @board[three_in_a_row[2]] == "X"
+        @winning_token = "X"
         return three_in_a_row
 
         break
       elsif @board[three_in_a_row[0]] == "O" && @board[three_in_a_row[1]] == "O" && @board[three_in_a_row[2]] == "O"
+        @winning_token = "O"
         return three_in_a_row.to_a
         break
       end
