@@ -138,5 +138,7 @@ class TicTacToe
       return @winning_token
     else
       return nil
+    end
+  end
 
 end
