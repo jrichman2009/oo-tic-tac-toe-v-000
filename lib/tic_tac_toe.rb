@@ -134,6 +134,9 @@ class TicTacToe
     while over? != true
       turn
     end
-    if
+    if winner != nil
+      return @winning_token
+    else
+      return nil
 
 end
